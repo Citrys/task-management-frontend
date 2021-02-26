@@ -36,13 +36,14 @@ class SignInPage extends Component {
   submit = async () => {
     this.setState({ errorMessage: null });
     const { username, password } = this.state;
+    console.log(username)
 
     try {
       await this.props.userStore.signin(username, password);
       this.props.routerStore.push('/tasks');
     } catch (error) {
-      const errorMessage = error.response.data.message;
-      this.setState({ errorMessage });
+      console.log(error.message)
+      this.setState({ error });
     }
   };
 

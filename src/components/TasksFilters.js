@@ -87,9 +87,9 @@ class TasksFilters extends Component {
                   displayEmpty
                 >
                   <MenuItem value="">No status filter</MenuItem>
-                  <MenuItem value={'OPEN'}>Open</MenuItem>
-                  <MenuItem value={'IN_PROGRESS'}>In Progress</MenuItem>
-                  <MenuItem value={'DONE'}>Done</MenuItem>
+                  <MenuItem value={'Open'}>Open</MenuItem>
+                  <MenuItem value={'In_Progress'}>In Progress</MenuItem>
+                  <MenuItem value={'Done'}>Done</MenuItem>
                 </Select>
               </FormControl>
             </ControlContainer>
